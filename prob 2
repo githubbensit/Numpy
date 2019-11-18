@@ -1,0 +1,10 @@
+import numpy as np
+
+a= np.arange(1,101).reshape(10,10)
+b=(a*a)%3
+c,d = np.where(b == 0)
+e = a*a
+f = e[c,d]
+
+
+print('The numbers that is divisible by 3 are: ' + str(f))
